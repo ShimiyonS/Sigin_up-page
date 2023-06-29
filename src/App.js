@@ -6,7 +6,7 @@ function App() {
     <>
        <Routes>
             <Route path="/" element={<Signup />} exact />
-            <Route path="/forgotpassword" element={<Forgtopassword />} />
+            <Route path="/users" element={<Forgtopassword />} />
         </Routes>
     </>
   );
