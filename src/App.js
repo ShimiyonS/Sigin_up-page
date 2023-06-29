@@ -5,8 +5,8 @@ function App() {
   return (
     <>
        <Routes>
-            <Route path="/" element={<Signup />} exact />
             <Route path="/users" element={<Forgtopassword />} />
+            <Route path="/" element={<Signup />} exact />
         </Routes>
     </>
   );
