@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 601px) {
+  .content {
+    width: 520px;
+    padding: 30px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 25px;
+  }
+
+  .tag {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .field {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    position: absolute;
+    width: 300px;
+    padding: 30px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 25px;
+  }
+
+  .tag {
+    width: 500px;
+    padding: 10px;
+  }
+  .field {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+  }
+}
