@@ -6,7 +6,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [Phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [success, setSuccess]=useState("");
+  const [success, setSuccess] = useState("");
   const url = "https://surveyor-app-server.vercel.app/users/";
   const headers = {
     "Content-Type": "application/json",
@@ -38,54 +38,57 @@ const Signup = () => {
         <div className="content">
           <h1>Create your own Account</h1>
           <form>
-            <div className="tag">
-              <div>User Name:</div>
+            <label>
+              userName:
               <input
                 type="text"
                 name="Name"
-                id=""
                 className="field"
                 onChange={(e) => {
                   setUserName(e.target.value);
                 }}
+                required
               />
-            </div>
-            <div className="tag">
-              <div>Password:</div>
+            </label>
+            <label>
+              Password:
               <input
                 type="password"
-                name=""
-                id=""
+                name="password"
                 className="field"
                 onChange={(e) => {
                   setPassword(e.target.value);
                 }}
+                required
               />
-            </div>
-            <div className="tag">
-              <div>Phone Number:</div>
+            </label>
+            <label>
+              PhoneNumber :
               <input
-                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                maxLength="10"
+                type="tel"
                 name="number"
-                id=""
                 className="field"
                 onChange={(e) => {
                   setPhone(e.target.value);
                 }}
+                required
               />
-            </div>
-            <div className="tag">
-              <div>Email:</div>
+            </label>
+            <label>
+              Email:
               <input
                 type="email"
                 name="email"
-                id=""
                 className="field"
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                required
               />
-            </div>
+            </label>
             <button
               type="submit"
               onClick={(e) => {

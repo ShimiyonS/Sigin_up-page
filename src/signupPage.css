@@ -1,12 +1,15 @@
-body {
-  display: flex;
-  justify-content: center;
-}
 .App {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container {
+  width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
   text-align: center;
@@ -22,7 +25,30 @@ button {
   cursor: pointer;
   border-radius: 3px;
 }
-@media only screen and (min-width: 601px) {
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1548e3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* 
+  @media only screen and (min-width: 601px) {
   .content {
     width: 520px;
     padding: 30px;
@@ -60,4 +86,4 @@ button {
     height: 30px;
     border-radius: 10px;
   }
-}
+} */
