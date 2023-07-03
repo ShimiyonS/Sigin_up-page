@@ -6,6 +6,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [Phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [success, setSuccess]=useState("");
   const url = "https://surveyor-app-server.vercel.app/users/";
   const headers = {
     "Content-Type": "application/json",
@@ -13,7 +14,7 @@ const Signup = () => {
   const getPostsData = (user) => {
     axios
       .post(url, user, { headers: headers })
-      .then((data) => console.log(data.data.message))
+      .then((data) => setSuccess(data.data.message))
       .catch((error) => console.log(error));
   };
   const submitHandler = (e) => {
@@ -26,9 +27,9 @@ const Signup = () => {
     };
     console.log(user);
     getPostsData(user);
-    setPassword("");
-    setEmail("");
-    setPhone("");
+    setTimeout(() => {
+      alert(success);
+    }, 600);
   };
 
   return (
