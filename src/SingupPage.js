@@ -36,7 +36,7 @@ const Signup = () => {
     <div className="App">
       <div className="container">
         <div className="content">
-          <h1>Create your own Account</h1>
+          <h1>Siginup your own Account</h1>
           <form>
             <label>
               userName:
@@ -95,7 +95,7 @@ const Signup = () => {
                 submitHandler(e);
               }}
             >
-              Submit
+              Siginup
             </button>
           </form>
         </div>
