@@ -7,16 +7,13 @@ const Signup = () => {
   const [Phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const url = "https://surveyor-app-server.vercel.app/users/";
-  const headers=  {
+  const headers = {
     "Content-Type": "application/json",
-  }
+  };
   const getPostsData = (user) => {
     axios
-      .post(url,
-        user ,
-       { headers: headers}
-      )
-      .then((data) => console.log(data.data))
+      .post(url, user, { headers: headers })
+      .then((data) => console.log(data.data.message))
       .catch((error) => console.log(error));
   };
   const submitHandler = (e) => {
@@ -27,14 +24,18 @@ const Signup = () => {
       email: email,
       number: Phone,
     };
-
+    console.log(user);
     getPostsData(user);
+    setPassword("");
+    setEmail("");
+    setPhone("");
   };
 
   return (
-    <>
+    <div className="App">
       <div className="container">
         <div className="content">
+          <h1>Create your own Account</h1>
           <form>
             <div className="tag">
               <div>User Name:</div>
@@ -51,7 +52,7 @@ const Signup = () => {
             <div className="tag">
               <div>Password:</div>
               <input
-                type="text"
+                type="password"
                 name=""
                 id=""
                 className="field"
@@ -75,8 +76,8 @@ const Signup = () => {
             <div className="tag">
               <div>Email:</div>
               <input
-                type="text"
-                name="Email"
+                type="email"
+                name="email"
                 id=""
                 className="field"
                 onChange={(e) => {
@@ -95,7 +96,7 @@ const Signup = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Signup;

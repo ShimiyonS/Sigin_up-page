@@ -2,7 +2,26 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1548e3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
 @media only screen and (min-width: 601px) {
   .content {
     width: 520px;
