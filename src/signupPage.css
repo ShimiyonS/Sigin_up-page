@@ -1,6 +1,7 @@
 .App {
   height: 100vh;
   display: flex;
+  background-color: #f2f2f2;
   justify-content: center;
   align-items: center;
 }
@@ -8,24 +9,22 @@
   width: 400px;
   padding: 20px;
   background-color: #f2f2f2;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
   text-align: center;
   margin-top: 0;
 }
-button {
+/* button {
   width: 100%;
   padding: 10px;
-  background-color: #1548e3;
+  background-color: red;
   border: none;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 3px;
-}
+} */
 label {
+  color: #050517;
   display: block;
   margin-bottom: 5px;
 }
@@ -33,18 +32,17 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: none;
+  border-radius: 20px;
 }
 button {
-  width: 100%;
   padding: 10px;
-  background-color: #1548e3;
+  background-color: #2d048a;
+  color: #fdfdff;
   border: none;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 20px;
+  width: 100%;
 }
 
 /* 
